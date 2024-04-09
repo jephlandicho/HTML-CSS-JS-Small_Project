@@ -1,0 +1,5 @@
+#serviceDisplay {
+    font-size: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+  }

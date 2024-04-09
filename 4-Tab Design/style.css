@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f2f5;
+    color: #333;
+  }
+  
+  .section-center {
+    width: 80vw;
+    margin: 2rem auto;
+    max-width: 1170px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    background: #fff;
+  }
+  
+  .image img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+    height: 200px;
+  }
+  
+  .tabs {
+    background: #ffffff;
+  }
+  
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    font-size: 1rem;
+    background: #e4e6eb;
+    color: #050505;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+    border-radius: 20px;
+  }
+  
+  .button:hover:not(.live) {
+    background: #d1d8e0;
+  }
+  
+  .tabs-content {
+    padding: 1rem;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .content {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  .button.live, .button.live:hover {
+    background: #007bff;
+    color: #ffffff;
+  }
+  
+  .content.live {
+    display: block;
+  }
+  
+  @media (min-width: 992px) {
+    .section-center {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+    }
+  
+    .image img {
+        height: auto;
+        border-radius: 8px;
+    }
+  }
+  
